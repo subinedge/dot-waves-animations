@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #5295F1;
+  color: #fff;
+  font-family: 'Helvetica';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h3 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 450px;
+}
+
+.circle {
+  background-image: linear-gradient(to bottom, #fff, #eee);
+  border-radius: 50%;
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  margin: 8px;
+  transition: transform 0.3s linear;
+}
+
+.circle.grow {
+  transform: scale(2);
+}
